@@ -1,0 +1,10 @@
+{
+  "hans.peter": {
+    "name": "Hans Peter",
+    "password": "hanspeterspasswort"
+  },
+  "max.mustermann" {
+    "name": "Max Mustermann",
+    "password": "maxi123"
+  }
+}
