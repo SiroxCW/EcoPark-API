@@ -12,13 +12,69 @@ Dies ist die Dokumentation der API, welche die EcoPark App benutzt. Eine RESTful
 Retourniert einen boolean Wert, ob die Anmeldedaten korrekt sind.
 #### Request
 ```http
-GET /api/v1/login?user=max.mustermann@a1.at&password=maxi123
+GET /api/v1/login?email=stephan.huber@a1.at&password=stephan
 ```
 #### Antwort
 ```json
 {
-    "status": "success",
-    "message": "Login successful."
+  "message": "Login successful.",
+  "status": "success",
+  "user_id": 4
 }
 ```
 
+### Parkplatz ID bekommen
+Retourniert die Parkplatz ID von einem User, falls er einen Parkplatz hat.
+#### Request
+```http
+GET /api/v1/getSpotID?owner_id=3
+```
+#### Antwort
+```json
+{
+  "parkspot": "1",
+  "status": "success"
+}
+```
+
+### Anzahl an verfügbaren Parkplätzen bekommen
+Retourniert die Anzahl an Parkplätzen welche man reservieren kann.
+#### Request
+```http
+GET /api/v1/getAvailable
+```
+#### Antwort
+```json
+{
+  "available": "2",
+  "status": "success"
+}
+```
+
+### Parkplatz verfügbar machen
+Macht einen Parkplatz verfügbar welcher dann reserviert werden kann.
+#### Request
+```http
+GET /api/v1/makeAvailable?parkspot_id=2
+```
+#### Antwort
+```json
+{
+  "message": "Park spot 1 is now available for you the entire day today.",
+  "status": "success"
+}
+```
+
+### Parkplatz reservieren
+Reserviert einen Parkplatz, welcher verfügbar ist.
+#### Request
+```http
+GET /api/v1/reserve?user_id=1
+```
+#### Antwort
+```json
+{
+  "message": "Park spot 1 reserved successfully.",
+  "status": "success"
+}
+```
