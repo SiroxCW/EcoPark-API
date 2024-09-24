@@ -23,6 +23,20 @@ GET /api/v1/login?email=stephan.huber@a1.at&password=stephan
 }
 ```
 
+### Login Passwort Reset
+Ändert das Passwort eines Benutzers.
+#### Request
+```http
+GET /api/v1/resetPassword?email=stephan.huber@a1.at&password=stephan&new_password=stephan123!
+```
+#### Antwort
+```json
+{
+  "message": "Password changed successfully",
+  "status": "success"
+}
+```
+
 ### Parkplatz ID bekommen
 Retourniert die Parkplatz ID von einem User, falls er einen Parkplatz hat.
 #### Request
