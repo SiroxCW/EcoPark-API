@@ -27,7 +27,7 @@ GET /api/v1/login?email=stephan.huber@a1.at&password=stephan
 Retourniert die Parkplatz ID von einem User, falls er einen Parkplatz hat.
 #### Request
 ```http
-GET /api/v1/getSpotID?owner_id=3
+GET /api/v1/getSpotID?user_id=3
 ```
 #### Antwort
 ```json
