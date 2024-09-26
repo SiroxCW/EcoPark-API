@@ -2,7 +2,7 @@
 # EcoPark API Dokumentation
 
 ## Beschreibung
-EcoPark ist eine Thunkable App welche für den Lehrlingshackathon 2024 vom A1 Team entwickelt wurde.<br><br>
+EcoPark ist eine Thunkable App welche unser Hackathon Team von A1 entwickelt wurde. Website, API und die App an sich wurde an <b>1 Tag</b> gemacht.<br><br>
 Die App soll es ermöglichen, dass Mitarbeiter ihre Parkplätze in der Firmengarage z.B. bei Urlaub oder Krankenständen freigeben können. Andere Mitarbeiter können dann diese Parkplätze reservieren und nutzen. Die App soll auch eine Übersicht über die verfügbaren Parkplätze und die Reservierungen bieten um <b>lange Parkplatzsuchen zu vermeiden.</b>
 
 ## API Dokumentation
